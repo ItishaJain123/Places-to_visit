@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* background: #262626; */
+  font-family: sans-serif;
+}
+
+.nav-area {
+  background: rgba(0, 0, 0, 0.1);
+  height: 60px;
+  position: relative;
+  width: 100%;
+  top: 0;
+}
+
+.logo {
+  margin: 0 50px;
+  height: 60px;
+  float: left;
+  color: white;
+  font-size: 40px;
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: #f5bb00;
+}
+
+.menu-area {
+  float: right;
+  list-style: none;
+  margin: 20px;
+}
+
+.menu-area li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.menu-area li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  letter-spacing: 2px;
+}
+
+.menu-area li a:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px white;
+  border-radius: 10px;
+  padding: 0px 10px;
+  text-decoration: underline;
+}
+
+body {
+  background: url("images/contact.jpg");
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-position: cover;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  opacity: 1;
+}
+
+#contact-section {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 2%;
+}
+
+#contact-section .container h2 {
+  text-align: center;
+  font-size: 60px;
+  text-decoration: none;
+  text-underline-position: under;
+  color: rgb(26, 23, 23);
+  letter-spacing: 2px;
+}
+
+.contact-form i.fa {
+  font-size: 22px;
+  padding: 4%;
+  background-color: black;
+  margin: 6%;
+  border-radius: 80%;
+  cursor: pointer;
+  border: 2px solid rgb(190, 190, 190);
+  color: rgb(190, 190, 190);
+}
+
+.contact-form i.fa:hover {
+  cursor: pointer;
+  border: 2px solid white;
+  color: white;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.form-info {
+  font-size: 25px;
+  font-style: italic;
+  color: white;
+  letter-spacing: 2px;
+}
+
+input {
+  padding: 20px;
+  margin: 20px;
+  width: 70%;
+  background-color: rgba(199, 190, 190, 0.5);
+  color: black;
+  border: none;
+  outline: none;
+}
+
+input::placeholder {
+  color: white;
+}
+
+.btn {
+  width: 40%;
+  background: rgba(0, 0, 0, 0.7);
+  outline: none;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 33px;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 3%;
+  border: 2px solid rgb(190, 190, 190);
+  color: rgb(190, 190, 190);
+}
+
+.btn:hover {
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
+  #contact-section .contact-form {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  #contact-section .btn {
+    width: 60%;
+  }
+}
